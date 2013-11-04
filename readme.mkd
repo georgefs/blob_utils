@@ -1,0 +1,37 @@
+Introduction
+===
+blob utils is simple way to save file into blobstorage
+
+
+
+Usega
+===
+
+```pthon
+import blob_utils
+
+blobinfo = blob_utils.file_upload(filename, file_content, content_type)
+
+or
+
+blobinfo = blobinfo.url_upload(url)
+
+```
+
+
+Installation
+===
+download
+```
+git clone git@github.com:georgefs/blob_utils.git
+cp blob_utils/blob_utils "your project path"
+```
+
+edit app.yaml 
+
+add 
+```
+includes:
+- blob_utils/include.yaml
+```
+
