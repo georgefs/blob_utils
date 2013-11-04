@@ -1,6 +1,7 @@
 Introduction
 ===
-blob utils is simple way to save file into blobstorage
+google appengine plugin 
+blob_utils is simple way to save file into blobstorage
 
 
 
@@ -28,8 +29,6 @@ cp blob_utils/blob_utils "your project path"
 ```
 
 edit app.yaml 
-
-add 
 ```
 includes:
 - blob_utils/include.yaml
