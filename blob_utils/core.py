@@ -20,9 +20,9 @@ def file_upload(file_name, file_content, content_type=False):
     return blobstore.BlobInfo.get(blob_key)
 
 
-def url_upload(url):
+def url_upload(url, file_name=False, content_type=False):
     f = urlfetch.fetch(url)   
-    content_type = f.headers['content-type']
-    file_name = "default"
+    content_type = content_type or f.headers['content-type']
+    file_name = file_name or "default"
     file_content = f.content
     return file_upload(file_name, file_content, content_type)
