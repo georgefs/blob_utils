@@ -1,12 +1,7 @@
 application: udnaffiliate
 version: 1
-runtime: python27
+runtime: python
 api_version: 1
-threadsafe: true
-
-libraries:
-- name: ssl
-  version: latest
 
 includes:
 - blob_utils/include.yaml
